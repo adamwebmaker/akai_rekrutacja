@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+
+
+
+	<section id="task-frontend">
+		<!--
+		<p>Zażółć gęślą jaźń</p>
+		<p style="text-transform:uppercase;">Zażółć gęślą jaźń</p>
+		-->
+
+
+
+		<span class="basic-title">Dołącz do nas!</span>
+
+		<hr class="form-line"></hr>
+
+		<form method="POST" autocomplete="off">
+
+
+
+			<label class="txt_label" for="first-name">Imię</label>
+		    <input type="text" id="first-name"/>
+
+            <label class="txt_label" for="last-name">Nazwisko</label>
+		    <input type="text" id="last-name"/>
+
+			<label class="txt_label" for="email">Email</label>
+		    <input type="email" id="email"/>
+
+			<span style="text-transform: uppercase;margin:1em;">Sekcja</span>
+			<section class="sekcja">
+				<div class="sekcja_blok">
+					<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+					<i class="fas fa-desktop"></i>
+					<label for="frontend-checkbox">Frontend</label>
+				</div>
+
+				<div class="sekcja_blok">
+					<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+					<i class="fas fa-server"></i>
+					<label for="backend-checkbox">Backend</label>
+				</div>
+
+				<div class="sekcja_blok">
+					<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+					<i class="fas fa-mobile-alt"></i>
+					<label for="mobile-checkbox">Mobile</label>
+				</div>
+
+				<div class="sekcja_blok">
+					<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+					<i class="far fa-images"></i>
+					<label for="graphics-checkbox">Grafika</label>
+				</div>
+
+
+
+
+
+
+
+
+			</section>
+				<input type="submit" value="Prześlij">
+		</form>
+
+	</section>
+
+
+
+
+ <script type="text/javascript" src="js/validation.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+ <script type="text/javascript">
+ 	$('body').mousemove(function(e){
+		var X = (e.pageX * -1 / 45);
+		var Y = (e.pageY * -1 / 45);
+		$(this).css('background-position', X + 'px ' + Y + 'px')
+	})
+ </script>
+
+</body>
+</html>
